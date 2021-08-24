@@ -72,10 +72,29 @@ getLast();
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
-function find( value, array ){
-  
-}
 
+
+let spiceRack = [ 'Cinnamon', 'Cumin', 'Basil', 'Oregano', 'Coriander'];
+
+function find( value, array ){
+  console.log ('in find');
+  for (let i=0; i<spiceRack.length; i++){
+    console.log (spiceRack[i]);
+  }//end for
+  if(spiceRack.length <= 5) {
+    return true;
+  } //end if
+  else{
+    return false;
+  }//end else
+
+}//end find
+console.log ('Do we have enough room in the pantry?', find());
+
+
+
+
+  
 // ----------------------
 // Stretch Goals
 // ----------------------
