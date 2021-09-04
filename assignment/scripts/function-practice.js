@@ -133,6 +133,7 @@ function sumAll( ) {
   return sum;
 }
 console.log (sumAll (muchoNumbers));
+
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
