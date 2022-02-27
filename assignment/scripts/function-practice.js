@@ -15,10 +15,10 @@ console.log('Test - should say "Hello World!"', hello());
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName(name) {
-  return 'Hello, Friend!'
+  return name;
 }
 // Remember to call the function to test
-console.log ('Should say Hello, Friend!', helloName());
+console.log ('Hello, ', helloName('rachel'));
 
 // 3. Function to add two numbers together & return the result
 function addNumbers( firstNumber, secondNumber ) {
@@ -138,7 +138,21 @@ console.log (sumAll (muchoNumbers));
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
 
+let postiveNumbers=[];
 
+function posFinder (num){
+  for (i=0; i<postiveNumbers.length; i++){
+   if (num>0){
+     postiveNumbers.push;
+   } //end if
+    else {
+      // enterNum<=0;
+      // return postiveNumbers[];
+      console.log ('not working');
+      } //end else if
+   } //end for
+  }
+console.log (postiveNumbers);
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
