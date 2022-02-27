@@ -58,15 +58,16 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 //    array is empty, return `undefined`.
 
 let teaTypes = ['Oolong', 'Green', 'Black', 'Matcha'];
+let empty = [];
 
 function getLast(array) {
-  for (let i=0; i<teaTypes.length; i++){
-    console.log (teaTypes[teaTypes.length-1]);
-  }
-
-
-}
-getLast();
+ if (array===[]){
+  return undefined;
+ } 
+ return array[array.length - 1];
+};
+console.log ('Last Value should be Matcha:', getLast(teaTypes));
+console.log ('Value should be undefined:', getLast(empty));
 
 
 // 7. Function to find a value in an array. Return true if the 
