@@ -139,21 +139,21 @@ console.log (sumAll (muchoNumbers));
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
 
-let postiveNumbers=[];
+let numPosArray = [9, 7, 0, -2, 8];
+let numNOPosArray = [-2,-27,0,-2,-8];
 
-function posFinder (num){
-  for (i=0; i<postiveNumbers.length; i++){
-   if (num>0){
-     postiveNumbers.push;
-   } //end if
-    else {
-      // enterNum<=0;
-      // return postiveNumbers[];
-      console.log ('not working');
-      } //end else if
-   } //end for
+
+function posFinder(array){
+   let returnArray = [];
+   for (let values of array){
+     if (values > 0){
+       returnArray.push(values);
+     } 
+   }return returnArray;
   }
-console.log (postiveNumbers);
+console.log ('in posFinder function:', posFinder(numPosArray));
+console.log ('in posFinder function:', posFinder(numNOPosArray));
+
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
