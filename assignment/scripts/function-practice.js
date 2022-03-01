@@ -158,3 +158,33 @@ console.log ('in posFinder function:', posFinder(numNOPosArray));
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
+
+//Write a function that takes an integer (minutes) and converts it
+//into seconds
+
+  function toSeconds(mins){
+    let answer = mins * 60;
+    return answer
+  }
+
+  console.log ('secondsConverted', toSeconds(12));
+
+  //Write a function that accepts two arguments: an array of integers
+  //and a "target" integer. The function should return the indices of
+  //the first two consecutive numbers in the array that sum to the 
+  //target. If no consecutive numbers satisfy this condition the 
+  //function should return false.
+
+  let integerArray = [1,5,2,5];
+
+  function sumChecker(array, target){
+    for (let i=0; i<array.length; i++ )
+     for (let j = i+1; j<array.length; j++){
+      if (array[i] + array[j]===target){
+        return [i, j];
+      }
+    }//end if
+    return false; 
+  }//end sumChecker
+
+  console.log ('in sumChecker. Index should be 1 & 3:', sumChecker(integerArray, 10));
